@@ -13,7 +13,11 @@ Text Domain: twentythirteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+<<<<<<< HEAD
 .nomargin{margin: 0 !important;}
+=======
+
+>>>>>>> f53fec6c06dc7c962242055129a4df33c78e5bca
 
 body{margin: 0;}
 .header, .footer{background: black; color:white; text-align: center;padding: 10px 0;}
@@ -23,6 +27,7 @@ h1{margin:0;}
 .post{overflow: hidden;margin: 0 0 20px 0;}
 a{ text-decoration: none;}
 a > img{height: 13%; width: 20%;float: left;overflow: hidden; margin: 0 20px 0 0;}
+<<<<<<< HEAD
 .sidebar{width:29%; float: right;outline: 1px solid green;}
 
 .azul{background: #AAE0FF;padding-bottom:10px;}
@@ -30,3 +35,6 @@ a > img{height: 13%; width: 20%;float: left;overflow: hidden; margin: 0 20px 0 0
 .verde{background: #A5F5BD;padding-bottom:10px;}
 .verde h3{background: #3B8B53; padding:  5px 10px; text-align: center;}
 li{margin-bottom: 10px;}
+=======
+.sidebar{width:29%; float: right;outline: 1px solid green;}
+>>>>>>> f53fec6c06dc7c962242055129a4df33c78e5bca
