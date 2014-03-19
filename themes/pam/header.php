@@ -5,13 +5,10 @@
 		<?php wp_head(); ?>
 
 
-<html>
-	<head>
-		<title>Blog</title>
-		<?php wp_head(); ?>
-
 	</head>
 	<body>
 		<div class="header">
-			<h1><?php bloginfo('name'); ?></h1>
+			<a class="blog" href="<?php echo home_url(); ?>">
+				<h1 class="text-center"><?php bloginfo('name'); ?></h1>
+			</a>
 		</div>

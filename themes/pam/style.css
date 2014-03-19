@@ -17,6 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body{margin: 0;}
 .header, .footer{background: black; color:white; text-align: center;padding: 10px 0;}
+.header a{color:white;text-decoration: none;}
 h1{margin:0;}
 .container{width:80%; margin: 0 auto; overflow: hidden;outline: 1px solid red;}
 .main-content{ width: 69%; float: left;outline: 1px solid blue;}
@@ -30,4 +31,4 @@ a > img{height: 13%; width: 20%;float: left;overflow: hidden; margin: 0 20px 0 0
 .verde{background: #A5F5BD;padding-bottom:10px;}
 .verde h3{background: #3B8B53; padding:  5px 10px; text-align: center;}
 li{margin-bottom: 10px;}
-.main-content img{width: 100%; }
+.single img{width: 100%; }

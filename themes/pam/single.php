@@ -9,7 +9,7 @@
 
 			<h2 class="text-center"><?php the_title(); ?></h2>
 
-			<div>
+			<div class ="single">
 
 				<?php the_content();?>
 
