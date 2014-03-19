@@ -1,0 +1,32 @@
+/*
+Theme Name: Pam
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: Pam
+Author URI: http://wordpress.org/
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.nomargin{margin: 0 !important;}
+
+body{margin: 0;}
+.header, .footer{background: black; color:white; text-align: center;padding: 10px 0;}
+h1{margin:0;}
+.container{width:80%; margin: 0 auto; overflow: hidden;outline: 1px solid red;}
+.main-content{ width: 69%; float: left;outline: 1px solid blue;}
+.post{overflow: hidden;margin: 0 0 20px 0;}
+a{ text-decoration: none;}
+a > img{height: 13%; width: 20%;float: left;overflow: hidden; margin: 0 20px 0 0;}
+.sidebar{width:29%; float: right;outline: 1px solid green;}
+
+.azul{background: #AAE0FF;padding-bottom:10px;}
+.azul h3{background: #2E8FC8; padding:  5px 10px; text-align: center;}
+.verde{background: #A5F5BD;padding-bottom:10px;}
+.verde h3{background: #3B8B53; padding:  5px 10px; text-align: center;}
+li{margin-bottom: 10px;}
