@@ -9,13 +9,14 @@
 
 			<h2 class="text-center"><?php the_title(); ?></h2>
 
-			<div class="single clearfix left">
+			<div>
 
 				<?php the_content();?>
 
+				<?php the_post_thumbnail(); ?>
+
 			</div>
 
-			<?php the_post_thumbnail(); ?>
 
 		</div> <!-- main content -->
 

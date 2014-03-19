@@ -30,3 +30,4 @@ a > img{height: 13%; width: 20%;float: left;overflow: hidden; margin: 0 20px 0 0
 .verde{background: #A5F5BD;padding-bottom:10px;}
 .verde h3{background: #3B8B53; padding:  5px 10px; text-align: center;}
 li{margin-bottom: 10px;}
+.main-content img{width: 100%; }
