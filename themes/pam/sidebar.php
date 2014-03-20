@@ -2,60 +2,50 @@
 
 	<div class= "azul">
 
+		<h3><a href="<?php echo SITEURL . 'category/azul'; ?>">Azul</a></h3>
+
 		<?php
 			$args = array('category_name'=>'azul', 'posts_per_page' => 5,'post_status' => 'publish');
-			$query = new WP_Query($args);
+			//$query = new WP_Query($args);
+			$myposts = get_posts( $args );
 
 			// echo '<pre>';
-			// print_r($categories);
+			// print_r($myposts);
 			// echo'</prev>';
 		?>
 
-		<h3><a href="<?php echo SITEURL.'category/azul'; ?>">Azul</a></h3>
-
 		<ul>
-
-			<?php
-				if ( $query->have_posts() ): while ( $query->have_posts() ): $query->the_post();
-			?>
-
-			<li>
-				<a href="<?php the_permalink();?>"><?php the_title();?></a>
-			</li>
-
-			<?php endwhile; endif;?>
+			
+			<?php foreach ( $myposts as $post ) : ?>
+				<li>
+					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				</li>
+			<?php endforeach; ?>
 
 		</ul>
 
-	</div>
+	</div> <!-- /.azul --> 
 
 	<div class= "verde">
 
 		<?php
 			$args = array('category_name'=>'verde', 'posts_per_page' => 5,'post_status' => 'publish');
-			$query = new WP_Query($args);
-
-			// echo '<pre>';
-			// print_r($categories);
-			// echo'</prev>';
+			//$query = new WP_Query($args);
+			$myposts = get_posts( $args );
 		?>
 
 		<h3><a href="<?php echo SITEURL.'category/verde'; ?>">Verde</a></h3>
 
 		<ul>
-
-			<?php
-				if ( $query->have_posts() ): while ( $query->have_posts() ): $query->the_post();
-			?>
-
-			<li>
-				<a href="<?php the_permalink();?>"><?php the_title();?></a>
-			</li>
-
-			<?php endwhile; endif;?>
+			
+			<?php foreach ( $myposts as $post ) : ?>
+				<li>
+					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				</li>
+			<?php endforeach; ?>
 
 		</ul>
 
-	</div>
+	</div><!-- /.verde --> 
 
 </div>
