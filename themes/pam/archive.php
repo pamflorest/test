@@ -3,7 +3,11 @@
 
 		<div class="main-content">
 
-			<h2><?php the_category(' ');?></h2>
+			<!-- Si viene de term -->
+			<h2><?php the_terms( $post->ID, 'dificultad' ); ?></h2>
+
+			<!-- Si viene de categoria -->
+			<h2><?php echo the_category(' '); ?></h2>
 
 			<?php get_header();
 				if ( have_posts() ) :
