@@ -32,3 +32,6 @@ a > img{height: 13%; width: 20%;float: left;overflow: hidden; margin: 0 20px 0 0
 .verde h3{background: #3B8B53; padding:  5px 10px; text-align: center;}
 li{margin-bottom: 10px;}
 .single img{width: 100%; }
+
+.cycle-slideshow { width: 45%; min-width: 200px; max-width: 500px; margin: 10px auto; padding: 0; position: relative; }
+.cycle-slideshow img { position: absolute; top: 0; left: 0; width: 100%; padding: 0; display: block; }

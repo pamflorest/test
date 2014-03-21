@@ -5,7 +5,7 @@
 
 			<h2>Los últimos 10 posts</h2>
 
-			<?php get_header(); 
+			<?php get_header();
 				if ( have_posts() ) :
 					while ( have_posts() ) : the_post();
 						// Your loop code
@@ -18,7 +18,7 @@
 
 				<div class="right">
 					<h2>
-						<a href="<?php the_permalink(); ?>"> 
+						<a href="<?php the_permalink(); ?>">
 							<?php the_title(); ?>
 						</a>
 					</h2>
@@ -38,7 +38,7 @@
 		<?php get_sidebar(); ?>
 
 	</div> <!-- /container -->
-	
+
 
 
 <?php get_footer(); ?>
