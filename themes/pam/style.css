@@ -13,7 +13,7 @@ Text Domain: twentythirteen
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-.nomargin{margin: 0 !important;}
+
 
 body{margin: 0;}
 .header, .footer{background: black; color:white; text-align: center;padding: 10px 0;}

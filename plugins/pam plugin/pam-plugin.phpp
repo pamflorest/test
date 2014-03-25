@@ -1,0 +1,81 @@
+<?php
+/**
+ * Plugin Name: Pam plugin
+ * Plugin URI: http://localhost:8888/
+ * Description: A brief description of the Plugin.
+ * Version: The Plugin's Version Number, e.g.: 1.0
+ * Author: Pamela Flores
+ * Author URI: http://URI_Of_The_Plugin_Author
+ * License: A "Slug" license name e.g. GPL2
+ */
+
+function mi_plugin_menu(){
+	//add_options_page($titulo_pagina, $titulo_menu, $alcance_permisos, $menu_slug, $funcion_callback);
+
+    add_options_page('Mi plugin','Mi plugin','read','mis_opciones','opciones_plugin');
+}
+//y ahora añadimos la función mi_menu_opciones al menú de administración
+add_action('admin_menu','mi_plugin_menu');
+
+//esta será la función callback para la función mi_plugin_menu
+function opciones_plugin(){
+?>
+	<div class="wrap">
+		<h2>A more Interesting Hello World Plugin</h2>
+		<h3>This plugin will search the DB for all draft posts and display their Title and ID</h3>
+		<p>Click the button below to begin the search</p>
+
+		<form action="" method="POST">
+			<input type="submit" name="search_draft_posts" value="Search" class="button-primary">
+		</form>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Post Title</th>
+					<th>Post ID</th>
+				</tr>
+			</thead>
+
+			<tfoot>
+				<tr>
+					<th>Post Title</th>
+					<th>Post ID</th>
+				</tr>
+			</tfoot>
+
+			<tbody>
+				<?php
+					global $wpdb;
+					$mytestdrafts = array();
+
+					if (isset($_POST['search_draft_posts'])) {
+						$mytestdrafts = $wpdb->get_results(
+							"
+							SELECT ID, Ciudad
+							FROM weather
+							"
+						);
+						update_option('myfirsplugin_draft_posts', $mytestdrafts); //store the results in WP options table
+					}elseif ('myfirsplugin_draft_posts') {
+						$mytestdrafts = get_option('myfirsplugin_draft_posts');
+					}
+				?>
+				<?php
+					foreach ($mytestdrafts as $mytestdraft) :
+				?>
+					<tr>
+						<?php
+							echo "<td>" . $mytestdraft->post_title . "</td>";
+							echo "<td>" . $mytestdraft->ID . "</td>";
+						?>
+					</tr>
+				<?php endforeach;?>
+			</tbody>
+		</table>
+	</div>
+
+<?php
+}
+
+?>
