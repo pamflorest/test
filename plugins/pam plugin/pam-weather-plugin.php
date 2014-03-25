@@ -12,7 +12,7 @@
 function mi_plugin_menu(){
 	//add_options_page($titulo_pagina, $titulo_menu, $alcance_permisos, $menu_slug, $funcion_callback);
 
-    add_options_page('Mi plugin','Mi plugin','read','mis_opciones','opciones_plugin');
+    add_menu_page('Mi plugin','Mi plugin','read','mis_opciones','opciones_plugin', '');
 }
 //y ahora añadimos la función mi_menu_opciones al menú de administración
 add_action('admin_menu','mi_plugin_menu');
