@@ -10,6 +10,10 @@
 
         });
 
+		$('.flexslider').flexslider({
+			animation: "slide"
+		});
+
 	}); //end
 
 

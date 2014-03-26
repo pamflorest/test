@@ -10,7 +10,7 @@
 				));
 			?>
 
-			<div id="slider3">
+			<!-- <div id="slider3">
 
                 <a class="buttons prev" href="#">&#60;</a>
 
@@ -26,11 +26,11 @@
                         	</a>
                         </li>
                         <?php endwhile;?>
-                    </ul><!--overview-->
+                    </ul> --><!--overview-->
 
-                </div><!--viewport-->
+                <!-- </div> --><!--viewport-->
 
-                <a class="buttons next" href="#">&#62;</a>
+                <!-- <a class="buttons next" href="#">&#62;</a>
 
                 <ul class="bullets">
 		        	<?php for($i = 0; $i<$branding->post_count; $i++):?>
@@ -38,7 +38,22 @@
 		        	<?php endfor;?>
 	        	</ul>
 
-            </div><!-- end slider3-->
+            </div> --><!-- end slider3-->
+
+            <!-- Place somewhere in the <body> of your page -->
+			<div class="flexslider">
+			  <ul class="slides">
+			    <?php
+           			while ( $branding->have_posts() ) : $branding->the_post();
+           		?>
+                <li>
+                	<a href="<?php the_permalink();?>" rel="nofollow">
+                		<?php the_post_thumbnail();?>
+                	</a>
+                </li>
+                <?php endwhile;?>
+			  </ul>
+			</div>
 
 
 			<h2>Los últimos 10 posts</h2>
